@@ -27,5 +27,5 @@ public class Client {
         superMe2.skills();
         System.out.println("可以看出 装饰者模式自由组合");
     }
-    
+
 }
