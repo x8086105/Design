@@ -22,7 +22,7 @@ public class User implements Serializable {
     private transient String className;
     private static Integer stInteger1=110;
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        //serializable();
+        serializable();
         deserializable();
 
     }

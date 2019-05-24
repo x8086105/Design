@@ -1,5 +1,6 @@
 package com.xmm.design.test;
 
+import com.xmm.poi.Person;
 import org.junit.Test;
 
 import java.lang.ref.SoftReference;
@@ -13,24 +14,24 @@ public class ClientTest {
      */
     @Test
     public void testIntern(){
-//        String s = new String("1");
-//        String s2 = "1";
-//        s.intern();
-//        System.out.println(s == s2);
-//
-//        String s3 = new String("1") + new String("1");
-//        s3.intern();
-//        String s4 = "11";
-//        System.out.println(s3 == s4);
+        String s = new String("1");
+        String s2 = "1";
+        s.intern();
+        System.out.println(s == s2);
+
+        String s3 = new String("1") + new String("1");
+        s3.intern();
+        String s4 = "11";
+        System.out.println(s3 == s4);
         String a5 = new String("qqqqqq") + new String("qqqq");//只在堆上创建对象
         a5.intern();//在常量池上创建引用
         String a6 = "qqqqqqqqqq";//此时不会再在常量池上创建常量AA，而是将a5的引用返回给a6
         System.out.println(a5 == a6); //true
         System.out.println(a5.intern()==a6);
-//        System.out.println("----------");
-//        String a="qwe";
-//        String b=new String("qwe");
-//        System.out.println(a==b.intern());
+        System.out.println("----------");
+        String a="qwe";
+        String b=new String("qwe");
+        System.out.println(a==b.intern());
     }
 
     /**
@@ -54,5 +55,12 @@ public class ClientTest {
             SoftReference<byte[]>b=new SoftReference<byte[]>(new byte[1*1024*1024]);
             bytes.add(b);
         }
+    }
+    @Test
+    public void testLoadClass(){
+        Person p = new Person();
+        System.out.println(p.getClass().getClassLoader().getParent());
+        System.out.println(p.getClass().getClassLoader().getParent().getParent());
+
     }
 }

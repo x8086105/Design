@@ -22,5 +22,8 @@ public class Client {
         MemberPrice memberPrice2=new MemberPrice(memberStrategy2);
         Double primaryPrice=memberPrice2.calculatePrice(10.0);
         System.out.println("该会员类型打折后是:"+primaryPrice);
+        IntermediateMemberStrategy d = new IntermediateMemberStrategy();
+        System.out.println("该会员类型打折后是:"+d.calculatePrice(10));
+
     }
 }
