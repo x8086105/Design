@@ -28,4 +28,5 @@ public class MemberPrice {
     public double calculatePrice(double price){
         return this.memberStrategy.calculatePrice(price);
     }
+
 }
