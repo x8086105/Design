@@ -22,6 +22,7 @@ public class ConcreteObserver implements Observer {
     public void update(BaseObservable obserable) {
         this.data1=((ConcreteObservable)obserable).getDate1();
         this.data2=((ConcreteObservable)obserable).getDate2();
+
         System.out.println("观察者状态为："+data1+"....."+data2);
     }
 }
