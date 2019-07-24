@@ -1,4 +1,4 @@
-package concurrent;
+package homeconcurrent;
 
 public class ThreadTest extends Thread {
     @Override

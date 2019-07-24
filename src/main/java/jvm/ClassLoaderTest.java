@@ -29,7 +29,7 @@ public class ClassLoaderTest extends ClassLoader {
         try {
             Object o = c.loadClass(UserEntity.class.getName());
             System.out.println(((Class) o).getName());
-            //不一样的原因 一个是由运用程序类加载器加载的，一个是由用户自定义类加载器加载的
+            //不一样的原因 一个是由应用程序类加载器加载的，一个是由用户自定义类加载器加载的
             System.out.println(o instanceof jvm.entity.UserEntity);
             UserEntity u = new UserEntity();
             System.out.println(u instanceof jvm.entity.UserEntity);
