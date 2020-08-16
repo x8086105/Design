@@ -7,7 +7,7 @@ import com.xmm.design.factory.methodfactory.export.ExportFile;
  */
 public class Client {
     public static void main(String[] args) {
-        ExportFactory exportFactory=new ExportHtmlFactory();
+        ExportFactory exportFactory = new ExportHtmlFactory();
         ExportFile ef = exportFactory.factory(0);
         ef.exportFile("xxx");
 

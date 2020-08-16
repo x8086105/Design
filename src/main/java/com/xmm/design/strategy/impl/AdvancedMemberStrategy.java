@@ -15,6 +15,6 @@ public class AdvancedMemberStrategy implements MemberStrategy {
     @Override
     public double calculatePrice(double price) {
         System.out.println("对于高级会员折扣类，会打8折");
-        return price*0.8;
+        return price * 0.8;
     }
 }

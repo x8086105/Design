@@ -7,7 +7,7 @@ public class InterMainBoard implements MainBoard{
     private Integer cpuHoles = 0;
 
     public InterMainBoard(Integer cpuHoles){
-        this.cpuHoles=cpuHoles;
+        this.cpuHoles = cpuHoles;
     }
 
     @Override

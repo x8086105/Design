@@ -9,7 +9,7 @@ import com.xmm.design.factory.abstractfactory.mainboard.MainBoard;
  * @author xuemingming
  */
 public class AmdFactory implements AbstractFactory {
-    private static Integer pins=99;
+    private static Integer pins = 99;
     @Override
     public Cpu createCpu() {
         return new AmdCpu(pins);

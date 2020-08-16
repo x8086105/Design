@@ -7,7 +7,7 @@ public class AmdMainBorad implements MainBoard {
     private Integer cpuHoles = 0;
 
     public AmdMainBorad(Integer cpuHoles){
-        this.cpuHoles=cpuHoles;
+        this.cpuHoles = cpuHoles;
     }
     @Override
     public void installCpu() {

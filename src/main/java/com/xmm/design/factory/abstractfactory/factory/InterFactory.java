@@ -9,7 +9,7 @@ import com.xmm.design.factory.abstractfactory.mainboard.MainBoard;
  * @author xuemingming
  */
 public class InterFactory implements AbstractFactory {
-    private static Integer pins=88;
+    private static Integer pins = 88;
     @Override
     public Cpu createCpu() {
         return new InterCpu(pins);

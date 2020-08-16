@@ -9,14 +9,19 @@ import com.xmm.design.factory.abstractfactory.mainboard.MainBoard;
  * 执行者
  */
 public class ComputerEngineer {
+
     private Cpu cpu;
+
     private MainBoard mainBoard;
+
     public void makeComputer(AbstractFactory factory){
         prepareHardwares(factory);
     }
+
     private void prepareHardwares(AbstractFactory factory){
+
         this.cpu = factory.createCpu();
-        this.mainBoard=factory.createMainBoard();
+        this.mainBoard = factory.createMainBoard();
 
         this.cpu.calculate();
         this.mainBoard.installCpu();
