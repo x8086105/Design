@@ -17,7 +17,7 @@ public class MemberPrice {
      * @param memberStrategy
      */
     public MemberPrice(MemberStrategy memberStrategy){
-        this.memberStrategy=memberStrategy;
+        this.memberStrategy = memberStrategy;
     }
 
     /**

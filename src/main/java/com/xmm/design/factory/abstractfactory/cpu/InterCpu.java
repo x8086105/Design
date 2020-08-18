@@ -4,7 +4,7 @@ public class InterCpu implements Cpu {
     /**
      * CPU 的针脚数
      */
-    private Integer pins=0;
+    private Integer pins = 0;
     public InterCpu(Integer pins){
         this.pins=pins;
     }
