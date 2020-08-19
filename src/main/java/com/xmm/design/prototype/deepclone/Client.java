@@ -18,5 +18,36 @@ public class Client {
         person.setAge(333);
         System.out.println(target);
         System.out.println(target1);
+        test();
+        test2();
+    }
+
+    /**
+     * 相同类型的对象之间的拷贝
+     * @throws CloneNotSupportedException
+     */
+    private static void test() throws CloneNotSupportedException {
+        PersonVO vo = PersonVO.builder()
+                .age(10)
+                .name("xmm")
+                .userId(10L)
+                .boss(Boss.builder().name("xwf").level(10).build())
+                .build();
+        PersonVO vo2 = (PersonVO) vo.clone();
+        System.out.println(vo2.getBoss().hashCode() == (vo.getBoss().hashCode()));
+    }
+
+    private static void test2(){
+        PersonVO vo = PersonVO.builder()
+                .age(10)
+                .name("xmm")
+                .userId(10L)
+                .boss(Boss.builder().name("xwf").level(10).build())
+                .build();
+        try {
+            PersonDTO vo2 = (PersonDTO) vo.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
     }
 }
