@@ -8,9 +8,11 @@ import com.xmm.design.decorator.component.MonkeyComponent;
  * @author xuemingming
  */
 public abstract class DecoratorBase implements MonkeyComponent {
+
     private MonkeyComponent monkeyComponent;
+
     public DecoratorBase(MonkeyComponent monkeyComponent){
-        this.monkeyComponent=monkeyComponent;
+        this.monkeyComponent = monkeyComponent;
     }
 
     /**

@@ -4,7 +4,7 @@ import com.xmm.design.decorator.component.MonkeyComponent;
 
 /**
  * @author xuemingming
- * 用来接收装饰者，也就是被装饰者（最原始的动物。）
+ * 用来接收++装饰者，也就是被装饰者（最原始的动物。）
  */
 public class MonkeyConcrete implements MonkeyComponent {
     @Override
