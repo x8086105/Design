@@ -6,10 +6,10 @@ import com.xmm.design.observer.observer.ConcreteObserver;
 public class Client {
     public static void main(String[] args) {
         //创建被观察者
-        ConcreteObservable concreteObservable=new ConcreteObservable();
+        ConcreteObservable concreteObservable = new ConcreteObservable();
         //创建观察者
-        ConcreteObserver concreteObserver1=new ConcreteObserver();
-        ConcreteObserver concreteObserver2=new ConcreteObserver();
+        ConcreteObserver concreteObserver1 = new ConcreteObserver();
+        ConcreteObserver concreteObserver2 = new ConcreteObserver();
         //将观察者注册进去
         concreteObservable.register(concreteObserver1);
         concreteObservable.register(concreteObserver2);
