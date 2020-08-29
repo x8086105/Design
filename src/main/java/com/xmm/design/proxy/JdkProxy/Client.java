@@ -2,15 +2,14 @@ package com.xmm.design.proxy.JdkProxy;
 
 import java.lang.reflect.Proxy;
 
-public class Test {
+public class Client {
     public static void main(String[] args) {
         UserDao userDao = new UserDaoImpl();
-        CommonInvocationHandler handler = new CommonInvocationHandler(userDao);
+        ProxyFactory handler = new ProxyFactory(userDao);
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
-        UserDao proxy = (UserDao) Proxy.newProxyInstance(userDao.getClass().getClassLoader(),userDao.getClass().getInterfaces(),handler);
+        UserDao proxy = (UserDao) handler.getPorxyInstance();
         ProxyGeneratorUtils.writeProxyClassToHardDisk("F:/$Proxy11.class",proxy.getClass().getInterfaces());
         proxy.login();
-
     }
 
 }
