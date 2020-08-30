@@ -4,8 +4,6 @@ public class VoltageAdapter implements IVoltage5V{
 
     IVoltage220V iVoltage220V = null;
 
-    public VoltageAdapter(){
-    }
 
     public VoltageAdapter(IVoltage220V iVoltage220V){
         this.iVoltage220V = iVoltage220V;

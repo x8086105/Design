@@ -10,16 +10,24 @@ public abstract class Drink {
      */
     private float price = 0.0f;
 
-    public void setPrice(float price) {
-        this.price = price;
+    public String getDesc(){
+        return desc + ":" + price;
     }
 
-    public float getPrice() {
+    public void setDesc(String desc){
+        this.desc = desc;
+    }
+
+    public float getPrice(){
         return price;
     }
 
+    public void setPrice(float price){
+        this.price = price;
+    }
+
     /**
-     * 计算他的话费价格，这个方法会被子类给实现
+     * 需要被实现的抽象方法，花费了多少
      * @return
      */
     public abstract float cost();

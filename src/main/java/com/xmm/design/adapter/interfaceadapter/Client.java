@@ -9,6 +9,11 @@ public class Client {
                 System.out.println("使用到M1方法了");
                 super.m1();
             }
+
+            @Override
+            public void m2() {
+                //super.m2();
+            }
         };
         adapter1.m1();
     }
