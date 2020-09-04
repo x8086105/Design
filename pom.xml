@@ -63,6 +63,12 @@
             <artifactId>guava</artifactId>
             <version>18.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.13</version>
+        </dependency>
 
     </dependencies>
 
