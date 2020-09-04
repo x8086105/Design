@@ -1,0 +1,5 @@
+哲学家就餐问题
+如果用Synchronized加锁的话，就会出现死锁，饥饿锁等问题
+具体代码如下
+
+Philosopher 这个类是单纯的使用了synchronized锁monitor锁的时候 出现了死锁
