@@ -1,6 +1,11 @@
 package com.xmm.concurrent.sync;
 
+import com.xmm.design.prototype.deepclone.Person;
 import org.openjdk.jol.info.ClassLayout;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.IntUnaryOperator;
 
 /**
  * 轻量级锁测试
@@ -11,7 +16,6 @@ public class SyncTest2 {
     public static void main(String[] args) throws InterruptedException {
         Thread.sleep(5000);
         Object a = new Object();
-
         Thread thread1 = new Thread(){
             @Override
             public void run() {
