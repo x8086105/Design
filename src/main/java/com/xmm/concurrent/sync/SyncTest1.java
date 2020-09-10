@@ -9,7 +9,6 @@ import org.openjdk.jol.info.ClassLayout;
 @Slf4j
 public class SyncTest1 {
 
-
     public static void main(String[] args) throws InterruptedException {
         log.info("lock加锁前，打印的对象的头信息为:");
         Object o = new Object();
