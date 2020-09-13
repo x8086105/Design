@@ -4,7 +4,10 @@ package com.xmm.design.singleton;
  * 懒汉式单例模式
  */
 public class Singleton2 {
-    private static Singleton2 singleton2 = null;
+    /**
+     * 记住 这里要加volatile的重要性
+     */
+    private volatile static Singleton2 singleton2 = null;
     private Singleton2(){
 
     }
