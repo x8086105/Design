@@ -1,11 +1,11 @@
 package com.xmm.concurrent;
 
-import com.google.common.collect.Lists;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayListTest {
-    private static List<Integer> list = Lists.newArrayList();
+    private static List<Integer> list = new ArrayList<Integer>();
     private static Integer count = 0;
     static Object o = new Object();
     public static void main(String[] args) throws InterruptedException {

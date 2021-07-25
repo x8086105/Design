@@ -4,6 +4,7 @@ package com.xmm.design.proxy.JdkProxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.concurrent.CountDownLatch;
 import java.util.logging.Handler;
 
 public class ProxyFactory  {
@@ -30,6 +31,7 @@ public class ProxyFactory  {
                 System.out.println("JDK动态代理的开始！");
                 Object o  = method.invoke(object,args);
                 System.out.println("JDK动态代理的结束！");
+                CountDownLatch latch = new CountDownLatch(1);
                 return o;
             }
         });
