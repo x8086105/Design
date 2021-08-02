@@ -1,5 +1,8 @@
 package com.xmm.zhss.design.mediator;
 
+/**
+ * 不适用组合模式的情况
+ */
 public class WithoutMediatorPatternDemo {
 	
 	public static void main(String[] args) {

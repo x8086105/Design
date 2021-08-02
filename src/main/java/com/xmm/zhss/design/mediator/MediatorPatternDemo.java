@@ -1,5 +1,8 @@
 package com.xmm.zhss.design.mediator;
 
+/**
+ * 组合模式
+ */
 public class MediatorPatternDemo {
 	
 	public static void main(String[] args) {

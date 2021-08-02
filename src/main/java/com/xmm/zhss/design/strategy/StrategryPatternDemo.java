@@ -55,7 +55,11 @@ public class StrategryPatternDemo {
 		}
 		
 	}
-	
+
+	/**
+	 * 这个工厂就是根据一个参数  选择返回哪个策略
+	 *一般来说，都是要的
+	 */
 	public static class DiscountCalculateStrategryFactory {  
 		
 		public static DiscountCalculateStrategy getDiscountCalculateStrategy(int discountStyle) {
@@ -71,7 +75,10 @@ public class StrategryPatternDemo {
 		}
 		
 	}
-	
+
+	/**
+	 * 这个就可有可无了
+	 */
 	public static class Context {
 		
 		private DiscountCalculateStrategy strategy;
